@@ -1,6 +1,7 @@
 from gui import plot
 from data_types import Point
+from datasource import read_points
 
-points = list(Point(x, x*x) for x in range(10))
+points = read_points("test.xlsx")
 
 plot(points)
